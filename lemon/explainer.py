@@ -218,7 +218,7 @@ class LemonExplainer(object):
         label=label,
         label_certainty=certainty,
         local_faithfulness=score
-      )
+      ), X_transfer
 
     return [explain_label(label) for label in labels]
 
